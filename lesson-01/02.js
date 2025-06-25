@@ -6,4 +6,11 @@
 */
 
 // your code
-let factorial
+let factorial = 1
+let a =1;
+
+while (a <= 10) {
+  factorial = factorial * a;
+  a = a + 1;
+}
+// alert("10!= " + factorial)
