@@ -16,11 +16,9 @@ const game = {
     lumber: 100,
   },
   addResource(resource, amount) {
+    game.resources[resource] = game.resources[resource] + amount;
     if (!(resource = game.resources[resource])) {
       console.log("Invalid resource");
-    } else {
-    game.resources[resource] = game.resources[resource] + amount;
-
-    }
+    }     
   }
 }
