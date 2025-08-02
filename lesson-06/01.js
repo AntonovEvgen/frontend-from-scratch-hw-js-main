@@ -30,8 +30,6 @@ filter = (array, callback) => {
       newArray.push(array[i])
     }
   }
-  return newArray
+  return newArray % 2 !== 0
 }
-const evenNumbers = filter([1, 2, 3, 4, 5], (num, i) => num % 2 !== 0);
 
-console.log(evenNumbers);
