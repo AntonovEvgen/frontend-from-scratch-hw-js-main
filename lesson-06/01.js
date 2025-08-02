@@ -30,6 +30,6 @@ filter = (array, callback) => {
       newArray.push(array[i])
     }
   }
-  return newArray % 2 !== 0
+  return newArray 
 }
-
+const result = filter([1, 2, 3, 4, 5], (element, index) => element % 2 !== 0);
