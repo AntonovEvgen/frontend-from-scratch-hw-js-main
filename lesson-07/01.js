@@ -25,19 +25,22 @@ const nextButton = document.getElementById("next-button")
 
 
 
-nextButton.addEventListener("click", function(){
+function currentImage() {
   image.src = WEB_TECH_IMAGES[imageIndex]
+}
+nextButton.addEventListener("click", function(){
   imageIndex++
   if (imageIndex >= WEB_TECH_IMAGES.length) {
     imageIndex = 0
   }
+  currentImage()
 })
 
 
 prevButton.addEventListener("click", function(){
-  image.src = WEB_TECH_IMAGES[imageIndex]
   imageIndex--
   if (imageIndex < 0) {
     imageIndex = WEB_TECH_IMAGES.length - 1
   }
+  currentImage()
 })
